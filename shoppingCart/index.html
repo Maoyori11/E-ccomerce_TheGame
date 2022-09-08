@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-TheGame</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+     <!-- Navbar Flex-->
+     <header class="hero">
+        <div class="logo-header" id="home"></div>
+            <a href=""><img src="./Ecommerce- TheGame/Slider/Slider post/Tiltle_The-Game.svg" alt=""></a>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="ffchacrabold" href="#home">Home</a></li>
+                <li><a class="ffchacrabold" href="#product">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- slider Swiper-->
+        <section class="Slider" id="">
+            <div>
+                <h2 class="Escoge_tu_Consola">Escoge tu Consola</h2>
+            </div>
+            <div class="slider swiper" >
+                <div class="swiper-wrapper">
+
+                    <div class="s1 swiper-slide">
+                        <img src="./Ecommerce- TheGame/Slider/Slider post/SliderTheGame (1).png" alt="">
+                    </div>
+
+                    <div class="s2 swiper-slide">
+                        <img src="./Ecommerce- TheGame/Slider/Slider post/SliderTheGame (2).png" alt="">
+                    </div>
+
+                    <div class="s3 swiper-slide">
+                        <img src=".//Ecommerce- TheGame/Slider/Slider post/SliderTheGame (3).png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- Logos Flex-->    
+    <section>
+        <div class="icon_thegame">
+
+            <a class="icon1" href="#product">
+                <img src="./Ecommerce- TheGame/Icons/SVG/Xbox.svg" alt="" >
+                <h3 class="name_icon">Xbox</h3>
+            </a>
+
+            <a class="icon2" href="#product">
+                <img src="./Ecommerce- TheGame/Icons/SVG/Play.svg" alt="">
+                <h3 class="name_icon">PlayS</h3>
+            </a>
+
+            <a class="icon3" href="#product">
+                <img src="./Ecommerce- TheGame/Icons/SVG/Nintendo.svg" alt="">
+                <h3 class="name_icon">Nintendo</h3>
+            </a>
+
+            <a class="icon4" href="#product">
+                <img src="./Ecommerce- TheGame/Icons/SVG/VideoGames.svg" alt="">
+                <h3 class="name_icon">VideoJuegos</h3>
+            </a>
+
+            <a class="icon5" href="#product">
+                <img src="./Ecommerce- TheGame/Icons/SVG/Accesries.svg" alt="">
+                <h3 class="name_icon">Accesorios</h3>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- chat -->
+    <div class="chatp">
+        <a class="chat_1" href="https://api.whatsapp.com/send?phone=573506443633&text=Hola%20TheGame%2C%20mi%20nombre%20es%20..." target="_blank"><img src="./Ecommerce- TheGame/Icons/SVG/Chat The Game.svg" alt=""></a>
+    </div>
+
+    <!-- shoppingCart -->
+    <div class="container" id="container_cart">
+        <h2 class="title_products" id="product">Productos</h2>
+        <div class="content_game"></div>
+        <!-- <a href=""><img class="micart" src="./micarritotheGame.svg" id="icon_cart"><span class="msuUni"id="totalUni"></span></a> -->
+        <i class='bx bx-cart-alt' id="icon_cart">
+         <span class="msuUni"id="totalUni"></span></i>
+    </div>
+
+    <div class="content_cart" id="contentCart">
+        <h2 class="title_carrito">Tus Compras</h2>
+        <div class="content_cart-body"></div>
+        <div class="content_cart-total">
+            <h3>Total $ <span id="total"></span> USD</h3>
+        </div>
+    </div>
+
+    <!-- ______________________________ -->
+
+
+        <!-- footer -->
+
+        <section class="footer_theGame">
+            <div class=" iconos-redes">
+                <a class="ig" href="https://www.instagram.com/leyendavirtual/" target="_blank"><img src="./Ecommerce- TheGame/Icons/SVG/Instagram.svg" alt="logo_instagram"></a>
+                <a class="lId" href="https://www.linkedin.com/in/leyendavirtual/" target="_blank"><img src="./Ecommerce- TheGame/Icons/SVG/LinkenId.svg" alt="logo_lindedIn"></a>
+                <a class="yT" href="https://www.youtube.com/channel/UCGqLEG2sorYoojetEblDbJQ" target="_blank"><img src="./Ecommerce- TheGame/Icons/SVG/Youtube.svg" alt="log_youtube"></a>
+            </div>
+            <a href="https://leyendavirtual.com/" target="_blank"><p class="footer">👑 LeyendaVirtual® - 2022 👑</p></a>
+        </section>
+    
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            },
+    
+        });
+        </script>
+    <SCRIPT LANGUAGE="JavaScript">var txt="  🎮 The Game ";var espera=280;var refresco=null;function rotulo_title() {document.title=txt;txt=txt.substring(1,txt.length)+txt.charAt(0);refresco=setTimeout("rotulo_title()",espera);}rotulo_title();</script>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap');
+
+:root{
+    --colorgreen: #00cc00;
+    --colorblue: #1d82f0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Quitar el scroll horizontal*/
+html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    position: relative;
+    top: 1px;
+    }
+
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.ffchacrabold {
+    font-family: "Chakra Petch", serif;
+    font-weight: 700;
+}
+
+.ffchacramedium {
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+}
+
+.ffchacraligth {
+    font-family: "Chakra Petch", serif;
+    font-weight: 300;
+}
+
+.text-center{
+    text-align: center
+}
+
+.hero{
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+    background-color: black;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 1);
+
+}
+
+.nav-menu{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav-menu ul{
+    color: var(--colorgreen);
+    margin-bottom: 10px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.nav-menu li{
+    margin-right: 1rem;
+
+}
+
+.nav-menu li:hover{
+    color: var(--colorgreen);
+}
+
+.menu-icon img{
+    width: 40px;
+    border-radius: 2px;
+
+}
+
+.icon__menu{
+    display: none;
+}
+
+.logo-header img{
+    width: 50%;
+}
+
+/* slider Swiper */
+
+
+.Slider{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.Escoge_tu_Consola{
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 2);
+    text-align: center;
+    border: 2px solid var(--colorgreen);
+    padding: .1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: black;
+    font-family: "Chakra Petch", serif;
+    font-weight: 700;
+    font-size: 40px;
+    color:  #00ff77;
+    text-shadow: 0 0 10px #00ff77;
+    
+}
+
+.swiper {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: 286px;
+    
+}
+
+/*Logos Flex*/
+
+
+.icon_thegame{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--colorgreen);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 1);
+    margin-bottom: 50px;
+
+}
+
+.name_icon{
+    text-align: center;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+}
+
+.icon_thegame img{
+    width: 120px;
+    min-height: 120px;
+}
+
+
+.icon1{
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+}
+
+.icon1{
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+    transition: background-color 0.8s color 0.8s, transform 1s;
+    border-radius: 5%;
+}
+
+.icon1:hover{
+    background-color: var(--colorgreen);
+    border-radius: 25px;
+}
+
+.icon1:active{
+    transform: scale(1.2);
+}
+
+.icon2{
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+    transition: background-color 0.8s color 0.8s, transform 1s;
+    border-radius: 5%;
+}
+
+.icon2:hover{
+    background-color: var(--colorgreen);
+    border-radius: 25px;
+}
+
+.icon2:active{
+    transform: scale(1.2);
+}
+
+.icon3{
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+    transition: background-color 0.8s color 0.8s, transform 1s;
+    border-radius: 5%;
+}
+
+.icon3:hover{
+    background-color: var(--colorgreen);
+    border-radius: 25px;
+}
+
+.icon3:active{
+    transform: scale(1.2);
+}
+
+.icon4{
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+    transition: background-color 0.8s color 0.8s, transform 1s;
+    border-radius: 5%;
+}
+
+.icon4:hover{
+    background-color: var(--colorgreen);
+    border-radius: 25px;
+}
+
+.icon4:active{
+    transform: scale(1.2);
+}
+
+.icon5{
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+    transition: background-color 0.8s color 0.8s, transform 1s;
+    border-radius: 5%;
+}
+
+.icon5:hover{
+    background-color: var(--colorgreen);
+    border-radius: 25px;
+}
+
+.icon5:active{
+    transform: scale(1.2);
+}
+
+/*Chat*/
+
+.chatp{
+    display: flex;
+
+
+}
+
+.chat_1 img{
+    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    left: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    transition:transform 0.5s;
+
+}
+
+.chat_1 img:hover{
+    transform: scale(1.1);
+}
+
+.chat_1 img:active{
+    transform: scale(1.4);
+}
+
+/*Productos*/
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.title_products{
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid var(--colorgreen);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content_game {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.game {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, 1);
+    transition: box-shadow 0.5s;
+}
+
+.game__img{
+    margin: auto;
+    width: 300px;
+    min-height: 300px;
+
+}
+
+.game:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.Game__body-title{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.precio_1{
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #1d82f0
+}
+
+.stock_1{
+    display: flex;
+    justify-content:center;
+    color: var(--colorgreen);
+    padding: .2rem;
+    margin-bottom: 10px;
+    max-width: 30%;
+}
+
+.descri_1{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0.1rem;
+}
+
+.btn {
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #ffa410;
+    color: #fff;
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 1);
+    transition: background-color 0.8s color 0.8s, transform 1s;
+}
+
+.btn:hover{
+background-color: black;
+border-radius: 7px;
+}
+
+.btn:active{
+    transform: scale(1.1);
+}
+
+.bx-cart-alt {
+    color: var(--colorgreen);
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1000;
+}
+
+.content_cart {
+    z-index: 2000;
+    width: 25vw;
+    height: 90vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    padding: 1rem;
+}
+
+.content_cart-body {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.item_cart {
+    width: 70%;
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.item_cart-img {
+    width: 50%;
+    padding: 1rem;
+}
+
+
+
+#totalUni{    
+    font-weight: 500;
+    padding: 2rem;
+    font-size: 30px;
+    color: var(--colorblue);
+    position: absolute;
+    right: 2px;
+
+}
+
+.content_cart-total {
+    height: 10%;
+    max-width: 80%;
+    background-color: rgb(244, 244, 244);
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 3px rgba(66, 66, 66, 1);
+}
+
+.title_carrito{
+    color: var(--colorblue);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.content_cart-show {
+    transform: translateX(0);
+}
+
+.container i{
+    z-index: 3000;
+}
+
+/*Footer*/
+
+.footer_theGame{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.iconos-redes{
+    margin-top: -30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    min-height: 120px;
+    object-fit: cover;
+    overflow: hidden;
+    transition:transform 0.8s;
+
+}
+
+.iconos-redes .ig:hover{
+transform: scale(1.1);
+}
+
+.iconos-redes .ig:active{
+transform: scale(1.4);
+}
+
+.iconos-redes .lId:hover{
+    transform: scale(1.1);
+}
+    
+    .iconos-redes .lId:active{
+    transform: scale(1.4);
+}
+
+.iconos-redes .yT:hover{
+transform: scale(1.1);
+}
+
+.iconos-redes .yT:active{
+transform: scale(1.4);
+}
+
+/*Responsive*/
+
+@media (max-width:756px){
+    
+    .hero{
+        margin-top: 10px;
+        flex-direction: column;
+ 
+    }
+    /* .Escoge_tu_Consola{
+        transform: scale(.5);
+
+        
+    } */
+
+    .Slider{
+        max-width: 480px;
+    }
+    
+    .swiper {
+        width: 475px;
+        height: 106px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .icon_thegame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: none;
+        gap: 20px;
+        transform: scale(.45);
+        
+    }
+
+    .content_cart {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bx-cart-alt {
+        right: 0.1rem;
+    }
+
+    .Slider{
+        margin: 0;
+    }
+
+    .content_game {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .chat_1 img{
+    display: none;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .swiper {
+        width: 375px;
+        height: 106px;
+        margin: 0;
+    }
+
+    .Escoge_tu_Consola{
+        width: 375px;
+        margin: 0;
+
+    }
+
+}
